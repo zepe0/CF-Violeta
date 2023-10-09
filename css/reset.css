@@ -1,0 +1,22 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ @font-face {
+    font-family: "Mystery Quest";
+    src: url("mystery-quest.https://fonts.googleapis.com/css?family=Mystery+Quest");
+ }
+html{    
+    font-family: "Mystery Quest", cursive;    
+    font-size: 18px;
+    min-height: 100vh;
+    min-width: 100vw;
+ 
+}
+/*a{
+    PROPIEDAD PARA QUE LOS ELEMENTOS QUE PODEMOS HACER CLICK NO FUNCIONE
+    
+    pointer-events: none;
+}
+*/
