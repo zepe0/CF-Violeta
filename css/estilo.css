@@ -124,37 +124,103 @@ footer{
 
 .cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 98%;
     gap: 1rem;
-    border: 1px solid red;
+    justify-content: center;  
     align-items: center;
     padding: 4px;
 }
-.card{
 
-    border:  1px solid black;
+.card{
+    width: 200px;
+    height: 300px;
+    border:  5px solid black;
     text-align: center;
+    size: 8px;
+    overflow: hidden; 
+    background-image: url(http://picsum.photos/200/300/?random130);
+
     
+}
+.card1{
+    
+    border:  5px solid black;
+    text-align: center;
+    size: 10px;
+    background-image: url(http://picsum.photos/200/300/?random131);
+
+    
+}
+.card2{
+    
+    border:  5px solid black;
+    text-align: center;
+    size: 10px;
+    background-image: url(http://picsum.photos/200/300/?random132);
+
+    
+}
+.card3{
+    
+    border:  5px solid black;
+    text-align: center;
+    size: 10px;
+    background-image: url(http://picsum.photos/200/300/?random133);
+   
+
+    
+}
+.card4{
+  
+    border:  5px solid black;
+    text-align: center;
+    size: 10px;
+    background-image: url(http://picsum.photos/200/300/?random134);
+
+    
+}.card5{
+   
+    border:  5px solid black;
+    text-align: center;
+    size: 10px;
+    background-image: url(http://picsum.photos/200/300/?random135);
+
+    
+}
+.card:hover{
+    background-image: none;
+    background-color: whitesmoke;
 }
 
 .figure > img{
     
-    flex-direction: row;
-   
+    flex-direction: row;   
     border: 1px solid;
     object-fit: scale-down;
 
 }
 .blur:hover{
     filter: blur(5px);
+    animation-name: blur;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+   
+   
 }
 
+    
 .brigth:hover{
-    filter: invert(100%)
+    filter: invert(100%);
+    animation-name: blur;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+   ;
 }
 .sepia:hover{
     filter: sepia(50%);
+    transition: all;
 }
 
 .shadow:hover{
@@ -162,4 +228,43 @@ footer{
 }
 .rotate:hover{
     filter: hue-rotate(240deg);
+}
+
+.textcard{
+    opacity: 0;
+    display: none;
+}
+
+.textcard:hover{
+    opacity: 1;
+    display: flex;
+}
+@keyframes blur {
+    from{
+      
+        opacity: 0;       
+       
+    }
+    to{
+      
+        opacity: 1;
+        box-shadow: 10px 5px 5px black;
+       
+    }
+}
+
+.oculto{
+    opacity: 0;
+   
+    transition: all 1.5s;
+    
+}
+
+.oculto:hover{
+    opacity: 1;
+    filter: drop-shadow(5px 5px 10px black);
+    size: 10px;
+    height: auto;
+    border: 1px red solid;
+    text-align: center;
 }
