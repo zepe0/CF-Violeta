@@ -1,3 +1,16 @@
+:root{    
+      
+    --color-primario:rgba(255, 0, 0, 0.601);
+    --color-secundario:rgba(0,0,0,0);
+    --color-negro:rgba(0,0,0,0);
+    --color-blanco:rgba(255, 255, 255, 0.438);
+    --font-size:17px;
+    --color-activo: rgba(0, 0, 255, 0.629);
+    
+        
+}
+
+
 *, ::after, ::before{
     margin: 0;
     padding: 0;
@@ -9,10 +22,13 @@
  }
 html{    
     font-family: "Mystery Quest", cursive;    
-    font-size: 18px;
+    font-size: var(--font-size);
     min-height: 100vh;
     min-width: 100vw;
  
+}
+main{
+    height: 100%;
 }
 
 

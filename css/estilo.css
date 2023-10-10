@@ -13,7 +13,7 @@ header{
 
 main{
   
-    border:  1px solid black;
+    border:  1px solid var(--color-negro);
     margin: 2rem 2rem;
   
     
@@ -53,7 +53,7 @@ footer{
     /* background: #16d09f; */
     text-decoration: overline;
     text-decoration-color: aqua;
-    color: blue;   
+    color: var(--color-activo);   
     
 }
 
@@ -136,7 +136,7 @@ footer{
 .card{
     width: 200px;
     height: 300px;
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 8px;
     overflow: hidden; 
@@ -146,7 +146,7 @@ footer{
 }
 .card1{
     
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 10px;
     background-image: url(http://picsum.photos/200/300/?random131);
@@ -155,7 +155,7 @@ footer{
 }
 .card2{
     
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 10px;
     background-image: url(http://picsum.photos/200/300/?random132);
@@ -164,7 +164,7 @@ footer{
 }
 .card3{
     
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 10px;
     background-image: url(http://picsum.photos/200/300/?random133);
@@ -174,7 +174,7 @@ footer{
 }
 .card4{
   
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 10px;
     background-image: url(http://picsum.photos/200/300/?random134);
@@ -182,7 +182,7 @@ footer{
     
 }.card5{
    
-    border:  5px solid black;
+    border:  5px solid var(--color-negro);
     text-align: center;
     size: 10px;
     background-image: url(http://picsum.photos/200/300/?random135);
@@ -191,7 +191,7 @@ footer{
 }
 .card:hover{
     background-image: none;
-    background-color: whitesmoke;
+    background-color: var(--color-blanco);
 }
 
 .figure > img{
@@ -248,21 +248,21 @@ footer{
     to{
       
         opacity: 1;
-        box-shadow: 10px 5px 5px black;
+        box-shadow: 10px 5px 5px var(--color-negro);
        
     }
 }
 
 .oculto{
     opacity: 0;
-   
+    height: 100%;   
     transition: all 1.5s;
     
 }
 
 .oculto:hover{
     opacity: 1;
-    filter: drop-shadow(5px 5px 10px black);
+    filter: drop-shadow(5px 5px 10px var(--color-negro));
     size: 10px;
     height: auto;
     border: 1px red solid;
