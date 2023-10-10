@@ -81,7 +81,7 @@ footer{
     vertical-align: super;
     text-decoration: none;
     border-radius: 50%;
-    background-color: blue;
+    background-color: var(--color-activo);
     content: '\25B2';
 
 }
@@ -267,4 +267,35 @@ footer{
     height: auto;
     border: 1px red solid;
     text-align: center;
+}
+.bgbody{
+    background-image: url(/media/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.gif{  
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px; 
+}
+
+.myboton{
+    border: 1px solid var(--color-negro);
+    background: green;
+    border-radius: 20px;
+    display: flex;
+    width: 70px;
+    height: 30px;
+    left: 50%;
+    position: relative;
+    justify-content: center;
+    
+}
+.myboton:hover{
+    background-color:var(--color-activo);
+    box-shadow: 20px 2px 2px 1px var(--color-negro);
 }
