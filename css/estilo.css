@@ -15,7 +15,7 @@ main{
   
     border:  1px solid black;
     margin: 2rem 2rem;
-    height: 1000px;
+  
     
 
 }
@@ -120,4 +120,46 @@ footer{
     justify-content: center;
     padding: .4rem;
     
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    gap: 1rem;
+    border: 1px solid red;
+    align-items: center;
+    padding: 4px;
+}
+.card{
+
+    border:  1px solid black;
+    text-align: center;
+    
+}
+
+.figure > img{
+    
+    flex-direction: row;
+   
+    border: 1px solid;
+    object-fit: scale-down;
+
+}
+.blur:hover{
+    filter: blur(5px);
+}
+
+.brigth:hover{
+    filter: invert(100%)
+}
+.sepia:hover{
+    filter: sepia(50%);
+}
+
+.shadow:hover{
+    filter: drop-shadow(5px 5px 10px red);
+}
+.rotate:hover{
+    filter: hue-rotate(240deg);
 }
