@@ -12,7 +12,7 @@
 
 <body>
     <header id="header">
-        <img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px">
+        <a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></a>
         <nav>
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
@@ -26,7 +26,39 @@
     <aside>
 
     </aside>
-    <main></main>
+    <main class="bgmain">
+        <h1>Audio y video con HTML 5</h1>
+        <h2>Audio</h2>
+        <p>Con HTML5 se dispone con la etiqueta: <br> <code title="etiqueta de audio en HTML 5"
+                style="background-color: rgba(0, 0, 0, 0.427); color: blue;"> &ltaudio&gt &lt/audio&gt</code> </p>
+      <section>
+            <audio controls>
+                <source src="media/audio-video/HakunaMatataItMeansNoWorries.ogg" type="audio/ogg">
+                <source src="media/audio-video/HakunaMatataItMeansNoWorries.mp3" type="audio/mp3">
+            </audio>
+      </section>
+      <section>
+        <video controls  poster="/media/audio-video/video_musicos.jpg" width="250px">
+            <source src="media/audio-video/Big_Buck_Bunny_small.ogv" type="image/ogv">
+            <source src="media/audio-video/leon.mp4" type="audio/mp4">
+        </video>
+        <video controls  width="250px">
+            <source src="media/audio-video/v_teclat.mp4" type="video/mp4">            
+        </video>
+  </section>
+
+  <section>
+    <script>
+        function cllickbutton(){
+            alert("")
+        } 
+    </script>
+    <button onclick=cllickbutton()> <video  width="150px">
+        <source src="media/audio-video/v_teclat.mp4" type="video/mp4">            
+    </video></button>
+  </section>
+
+    </main>
     <footer>
         <p>Desde 2023 &copy;
             <a href="mailto:nombre@dominio.es"> Contácteme </a>

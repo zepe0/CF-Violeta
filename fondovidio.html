@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('tu-imagen-de-reemplazo.jpg');
+      background-size: cover;
+    }
+
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: contain;
+    }
+
+  
+    .titulo{
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30px;
+        width: 89%;
+       
+    }
+    a{
+        color: beige;
+        text-decoration: none;
+        
+    }
+    nav{
+        display: flex;
+        width: 98%;
+        gap: 2rem;
+        background: #00000066;        
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">MENU1</a></li>
+            <li><a href="">MENU2</a></li>
+           
+        </ul>
+    </nav>
+
+  
+    <video autoplay muted loop class="video-background" id="video">
+      <source src="/media/audio-video/v_teclat.mp4" type="video/mp4">
+    </video>
+    <script>
+        function contentdel(){
+            
+            const videobg = document.getElementById("video")
+            const btn = document.getElementById("delbut")
+            if( videobg.style.zIndex === "-1"){
+
+                videobg.style.position = "fixed"
+                btn.style.position = "fixed"
+                videobg.style.zIndex = "0"
+                btn.style.zIndex = "4"
+            } else{
+                videobg.style.zIndex = "-1"
+                btn.style.zIndex = "4"
+            }            
+            
+          
+
+
+        }
+    </script>
+  
+
+  <h1 class="titulo">Bienvenido a nuesta páguina web</h1>
+  <button id="delbut" onclick=contentdel()>Borrar Contenido</button>
+  
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quam, cum, illum enim labore saepe quasi ducimus eligendi aspernatur dignissimos reprehenderit! Dolore ipsam ad rem mollitia esse, dignissimos quibusdam illum?
+    Similique minus sint excepturi expedita recusandae voluptas repellat sapiente, eos hic consequatur dignissimos accusantium, numquam labore dolor. Officiis perspiciatis possimus consequatur consequuntur, minus, natus eos quibusdam, dolores non blanditiis beatae?
+    Provident numquam libero minus quod corporis autem veritatis perferendis impedit, aliquam mollitia voluptates tenetur quibusdam, voluptatum eius obcaecati explicabo sint hic totam nemo repudiandae ullam sequi ut qui! Suscipit, laudantium?
+    Pariatur, possimus ut veritatis similique ipsum temporibus distinctio asperiores saepe explicabo accusamus! Sint officiis excepturi vel odio accusantium facere dolorem, consequuntur ut perferendis repudiandae qui? Nam deleniti illum officia porro!
+    Fugit, fugiat a. Nostrum debitis tenetur error temporibus adipisci obcaecati, vero beatae provident necessitatibus dicta tempore numquam quasi saepe minima enim facilis, itaque quidem ipsam aperiam? Dolore magni ab non!
+    Vero vitae qui corrupti facere similique aliquid. Repellendus, maxime voluptate esse officia sequi, placeat ab facere ex qui consequatur minus excepturi itaque sed ea aspernatur ducimus exercitationem quia quo laboriosam?
+    Deleniti a rem, minima illo porro doloremque magnam perspiciatis optio, facere dolorum, nesciunt incidunt totam. Ea voluptates deleniti reiciendis ullam tenetur dolore illo repellat sint, vel quis consequuntur quam ipsam?
+    Aperiam debitiliquam praesentium officiis ratione optio est distinctio veritatis ducimus fuga dolorum incidunt, exercitationem eveniet, excepturi culpa. Fugiat, repellat velit?
+  </div>
+</body>
+</html>

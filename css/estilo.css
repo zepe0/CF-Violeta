@@ -14,7 +14,8 @@ header{
 main{
   
     border:  1px solid var(--color-negro);
-    margin: 2rem 2rem;
+    margin: 1rem 2rem 1rem 3rem;    
+    min-height: 50rem;
   
     
 
@@ -44,6 +45,7 @@ footer{
     width: 98%;
     flex-wrap: nowrap;
     padding-block: 0;
+    margin: 1rem 2rem 1rem 1rem
     
 
 }
@@ -119,6 +121,8 @@ footer{
     gap: .5rem;
     justify-content: center;
     padding: .4rem;
+    justify-content: center;
+    margin: 1rem 10rem 1rem 10rem
     
 }
 
@@ -349,4 +353,18 @@ footer{
 .main{
     width: 80%;
     margin: auto;
+}
+.bgmain > section{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+   
+}
+
+.bgmain > h1,h2,p{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+
 }
