@@ -31,32 +31,49 @@
         <h2>Audio</h2>
         <p>Con HTML5 se dispone con la etiqueta: <br> <code title="etiqueta de audio en HTML 5"
                 style="background-color: rgba(0, 0, 0, 0.427); color: blue;"> &ltaudio&gt &lt/audio&gt</code> </p>
-      <section>
+        <section>
             <audio controls>
                 <source src="media/audio-video/HakunaMatataItMeansNoWorries.ogg" type="audio/ogg">
                 <source src="media/audio-video/HakunaMatataItMeansNoWorries.mp3" type="audio/mp3">
             </audio>
-      </section>
-      <section>
-        <video controls  poster="/media/audio-video/video_musicos.jpg" width="250px">
-            <source src="media/audio-video/Big_Buck_Bunny_small.ogv" type="image/ogv">
-            <source src="media/audio-video/leon.mp4" type="audio/mp4">
-        </video>
-        <video controls  width="250px">
-            <source src="media/audio-video/v_teclat.mp4" type="video/mp4">            
-        </video>
-  </section>
+        </section>
+        <section>
+            <video controls poster="/media/audio-video/video_musicos.jpg" width="250px" height="250px">
+                <source src="media/audio-video/Big_Buck_Bunny_small.ogv" type="image/ogv">
+                <source src="media/audio-video/leon.mp4" type="audio/mp4">
+            
+            </video>
+            
+            <video id="video" width="250px">
+                <source src="media/audio-video/v_teclat.mp4" type="video/mp4">
+            </video>
+        </section>
 
-  <section>
-    <script>
-        function cllickbutton(){
-            alert("")
-        } 
-    </script>
-    <button onclick=cllickbutton()> <video  width="150px">
-        <source src="media/audio-video/v_teclat.mp4" type="video/mp4">            
-    </video></button>
-  </section>
+        <section>
+            <script>
+                function controlPlay() {
+
+                    const btn = document.getElementById("video")
+                    if (btn.paused) {
+                        btn.play()
+
+                    } else {
+                        btn.pause()
+                    }
+
+                }
+            </script>
+            <hr>
+            <a href="javascript:controlPlay();">También funciona el PLay desde un Link</a>
+
+            <hr>
+            <button><img src="/media/controls/skip_previous.svg" alt=""></button>
+            <button onclick="controlPlay()"><img src="/media/controls/play_pause.svg" alt=""></button>
+            <button><img src="/media/controls/skip_next.svg" alt=""></button>
+            <button><img src="/media/controls/stop.svg" alt=""></button>
+
+            <hr>
+        </section>
 
     </main>
     <footer>
