@@ -55,6 +55,18 @@ p{
     column-count: 1;
 }
 
+div >iframe{
+    width: 350px;
+    height: 200px;  
+
+}
+
+iframe{
+    width: 89%;
+    height: 70vh;
+
+}
+
 @media screen and (min-width: 480px) {
     p{
         column-count: 2;
