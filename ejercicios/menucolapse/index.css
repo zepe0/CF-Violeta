@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Mystery Quest";
+    font-style: normal;
+    src: url("mystery-quest.https://fonts.googleapis.com/css?family=Mystery+Quest");
+}
+
+*,
+::after,
+::before,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Mystery Quest", cursive;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+nav {
+    width: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    position: fixed;
+    z-index: -1;
+    max-height: 0.3;
+
+}
+
+nav ul {
+    display: none;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    padding: 1vh 2vw;
+    list-style: none;
+}
+
+nav input[type="checkbox"] {
+    display: none
+}
+
+nav input[type="checkbox"]:checked~ul {
+
+    display: inline;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: #000;
+
+}
+
+
+.showMenu {
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 0.4rem;
+    margin: .4rem;
+    text-align: center;
+    transition: all 2s ease;
+}
+
+.showMenu:hover {
+    color: #9ab090;
+}
