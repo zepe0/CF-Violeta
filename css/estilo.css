@@ -292,8 +292,7 @@ footer{
     background: green;
     border-radius: 20px;
     display: flex;
-    width: 70px;
-    height: 30px;
+    width: 40%  ;
     left: 50%;
     position: relative;
     justify-content: center;
@@ -367,4 +366,44 @@ footer{
     display: flex;
     justify-content: center;
 
+}
+
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 0.5vh .6vw;
+    margin: 10px 10px;
+}
+
+.btnSend{
+    background: greenyellow;
+    width: 80px;
+    border-radius: 20px;
+}
+.btnReset{
+background-color: red;
+width: 80px;
+border-radius: 20px;
+}
+fieldset{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;    
+}
+
+.datosUser{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.out{
+    width: 30px;
+    color: black;
+    margin-left: 10px;
+    text-align: center;
 }
