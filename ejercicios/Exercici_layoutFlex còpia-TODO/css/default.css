@@ -97,7 +97,7 @@ section>button {
     flex-direction: column;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     #viajes {
         display: grid;
         grid-template-areas:
@@ -108,6 +108,9 @@ section>button {
     #viajes>section {
         width: 100%;
         margin: 0;
+        display: flex;
+        align-items: center;
+
     }
 
     .viajesItemUno {
@@ -116,13 +119,11 @@ section>button {
 
     section button {
         margin-bottom: 10px;
-
-
     }
 
     .viajesItemDos {
         grid-area: a;
-        ;
+
 
     }
 
@@ -134,14 +135,21 @@ section>button {
         width: 400px;
     }
 
-    section .viajesItemTres img {
-        display: flex;
-        width: 98%;
-        margin: ;
+    section .viajesItemTres>h2 {
+        width: 100%;
+        margin-left: 0;
 
 
     }
 
 
+
+}
+
+@media screen and (max-width: 767px) {
+    #viajes {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
