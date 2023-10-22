@@ -1,155 +1,150 @@
 @font-face {
-    font-family: "Mystery Quest";
-    font-style: normal;
-    src: url("mystery-quest.https://fonts.googleapis.com/css?family=Mystery+Quest");
+  font-family: "Mystery Quest";
+  font-style: normal;
+  src: url("mystery-quest.https://fonts.googleapis.com/css?family=Mystery+Quest");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
+  /*   display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #cabecera {
-    display: flex;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.869);
-    height: 180px;
-}
-
-img {
-    width: 15%;
-    object-fit: scale-down;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.869);
+  height: 180px;
+  width: 100vw;
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: large;
 }
 
 #viajes {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: stretch;
-    width: 100%;
-
-
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  width: 100%;
 }
 
-#viajes>section {
-    width: 33%;
-    margin-bottom: 30px;
-
+#viajes > section {
+  width: 33%;
+  margin-bottom: 30px;
 }
 
 .viajesItemUno {
-    background: #079fb3;
-    display: flex;
-    flex-direction: column;
-
+  background: #079fb3;
+  display: flex;
+  flex-direction: column;
 }
 
-section>img {
-    object-fit: cover;
-    width: auto;
-    margin: 15px;
-
+section > h2 {
+  width: auto;
+  margin-left: 10px;
+  font-size: large;
+}
+section > img {
+  margin-top: 10px;
 }
 
-section>h2 {
-    width: auto;
-    margin-left: 10px;
-    font-size: large;
+section > p {
+  height: 100%;
+  width: auto;
+  font-size: small;
+  margin: 30px 15px;
+  padding-bottom: 100px;
 }
 
-section>p {
-    height: 100%;
-    width: auto;
-    font-size: small;
-    margin: 30px 15px;
-    padding-bottom: 100px;
-
-}
-
-section>button {
-    text-align: center;
-    margin: 0 auto;
-    width: 10rem;
-
+section > button {
+  text-align: center;
+  margin: 0 auto;
+  width: 10rem;
 }
 
 .viajesItemDos {
-    background: #2f8c34ad;
-    display: flex;
-    flex-direction: column;
+  background: #2f8c34ad;
+  display: flex;
+  flex-direction: column;
 }
 
 .viajesItemTres {
-    background: #0ed5aab7;
-    display: flex;
-    flex-direction: column;
+  background: #0ed5aab7;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
-    #viajes {
-        display: grid;
-        grid-template-areas:
-            "a b"
-            "c c";
-    }
+  #cabecera {
+    height: 35px;
+    background: rgba(0, 0, 0, 0.869);
+  }
 
-    #viajes>section {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        align-items: center;
+  #viajes {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
 
-    }
+  #viajes > section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
 
-    .viajesItemUno {
-        grid-area: b
-    }
+  section > p {
+    height: 20%;
+    font-size: medium;
+  }
+  section > img {
+    object-fit: scale-down;
+    max-width: 250px;
+  }
 
-    section button {
-        margin-bottom: 10px;
-    }
+  .viajesItemUno {
+    grid-area: b;
+  }
 
-    .viajesItemDos {
-        grid-area: a;
+  section button {
+    margin-bottom: 10px;
+  }
 
+  .viajesItemDos {
+    grid-area: a;
+  }
 
-    }
+  .viajesItemTres {
+    grid-area: c;
+  }
 
-    .viajesItemTres {
-        grid-area: c;
-    }
-
-    section img {
-        width: 400px;
-    }
-
-    section .viajesItemTres>h2 {
-        width: 100%;
-        margin-left: 0;
-
-
-    }
-
-
-
+  section .viajesItemTres > h2 {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
-@media screen and (max-width: 767px) {
-    #viajes {
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (min-width: 0) and (max-width: 500px) {
+  #cabecera {
+    width: 100vw;
+    height: 25px;
+  }
 
+  #viajes {
+    display: flex;
+    flex-direction: column;
+  }
+  section > img {
+    width: auto;
+  }
 }
