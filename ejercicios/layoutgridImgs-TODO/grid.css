@@ -1,0 +1,20 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 310px;
+    min-width: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+img {
+    max-width: 380px;
+    min-width: 100px;
+}
+
