@@ -99,6 +99,14 @@ footer{
     animation-iteration-count:infinite;
  
 }
+.ejercicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  
+}
 
 @keyframes fade {
     from{
