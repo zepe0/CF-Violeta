@@ -26,15 +26,14 @@ header {
 
 form {
   display: flex;
-  flex-direction: column;
-  height: 98%;
+  flex-direction: column; 
   background: rgb(244, 155, 96);
   padding: 8px;
 }
 
 fieldset {
-  width: 100%;
-  height: 89%;
+  width: 89%;
+  
   border-radius: 10px;
 }
 
@@ -99,9 +98,7 @@ aside {
 }
 
 @media screen and (min-width: 700px) {
-    html{        
-        height: 100%;
-    } 
+
 
   body {
     height: 100%;
@@ -110,8 +107,8 @@ aside {
       "nav header header"
       "nav form aside"
       "nav footer footer";
-    grid-template-columns: 15vw 1fr 8vw;
-    grid-template-rows: 5rem 1fr 5em;
+    /* grid-template-columns: 10vw 1fr 10vw;
+    grid-template-rows: 5rem 80vh 5rem; */
   }
 
   nav {
@@ -127,25 +124,31 @@ aside {
   form {
     background: rgb(244, 155, 96);
     grid-area: form;
+    justify-content: center;
+    align-items: center;
   }
 
   fieldset {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
   } 
-  .izq{
-    width: 50vh;
-    height: 30vh;
+  .izq{ 
+   width: 40%;    
+    
   }
   .der{
-    width: 50vh;
-    height: 30vh;
+    width: 50%;
+    
+    
   }
 
   textarea {    
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+   
   } 
 
   footer {

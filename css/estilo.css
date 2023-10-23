@@ -100,13 +100,21 @@ footer{
  
 }
 .ejercicios{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.imgex{
+    max-width: 200px;
+}
+.cardex{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-  
+    
+    gap: 1rem;  
 }
+
 
 @keyframes fade {
     from{

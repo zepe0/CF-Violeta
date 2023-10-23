@@ -23,7 +23,6 @@ a {
     min-height: 140px;
     border-radius: 10px;
     max-width: 120px;
-   
     padding: 20px;
     display: flex;
     background-image: url("images/bgButton.png");
@@ -37,5 +36,10 @@ a {
     color: white;
     gap: 0.5rem;
 
-   
+
+}
+
+.btn {
+    background-image: none;
+
 }
