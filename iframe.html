@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="media-querys/style.css">
+    <link rel="stylesheet" href="../ejercicios/menucolapse/index.css">
     <link rel="icon" type="image/x-icon" href="/media/favicons/favicon.ico">
 
     <title>Document</title>
 </head>
 
-<body>
-    <header id="header">
-        <a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></a>
-        <nav>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="audio.html">Audio/video</a></li>
-                <li><a class="active" href="iframe.html">Iframe</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<body id="header">
+    <header>   
+        <section>
+            <nav>
+                <label for="muestraMenu" class="showMenu"> <img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></label>
+                <input type="checkbox" name="muestraMenu" id="muestraMenu">
+                <ul class=".viwe">
+                    <li><a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="60px"></a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="audio.html">Audio/Video</a></li>
+                    <li><a href="iframe.html" class="active">Iframe</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="florencia.html">Florencia</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <aside>
 
     </aside>
-    <main>
+    <main style="margin-top: 80px;"">
         <h3>Cifo Barcelona la Violeta</h3>
         <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.0320943604224!2d2.1305790760611036!3d41.41682197129612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4981b5fdca4b1%3A0x35e8d1d280af19bd!2sCIFO%20Barcelona%20-%20La%20Violeta!5e0!3m2!1ses!2ses!4v1697735381019!5m2!1ses!2ses"  referrerpolicy="no-referrer-when-downgrade"></iframe>
      <div>

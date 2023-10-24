@@ -5,61 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../ejercicios/menucolapse/index.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" type="image/x-icon" href="/media/favicons/favicon.ico">
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></a>
-        <nav>
-            <ul class="nav">
-                <li class="cardex"><a class="active" href="index.html">Home</a></li>
-                <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="audio.html">Audio/Video</a></li>
-                <li><a href="iframe.html">Iframe</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="florencia.html">Florencia</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 id="header"></h1>
 
-    <main>
-        <section >
-           
-            <ul class="ejercicios">
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/ejresponsive.html">📁Ejercicio responsive</a>
-                </li>
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/anuncios_alumnes.html">📁Ejercicio alumnes</a>
-                </li>
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/menucolapse/index.html">📁Menu colapse</a>
-                </li>
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/layoutgridImgs-TODO/gridImgsFlexAlumnes.html">📁Galeria imgs Flex</a>
-                </li>
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/ejercicioformFirstMobile-TODO/firstmobile.html">📁First Mobile</a>
-                </li>
-                <li class="cardex">
-                    <img src="./media/imgindex/Captura.JPG" class="imgex">
-                    <a href="/ejercicios/Exercici_layoutFlex còpia-TODO/index_6.html">📁LayoutFlex</a>
-                </li>
-            </ul>
-
-        </section>
+<body id="header">
+    <header>   
         <section>
-
+            <nav>
+                <label for="muestraMenu" class="showMenu"> <img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></label>
+                <input type="checkbox" name="muestraMenu" id="muestraMenu">
+                <ul class=".viwe">
+                    <li><a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="60px"></a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="audio.html">Audio/Video</a></li>
+                    <li><a href="iframe.html">Iframe</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="florencia.html">Florencia</a></li>
+                </ul>
+            </nav>
         </section>
+    </header>
+  
+   
+
+    <main class="main">
+        <h1>Listado de ejercicios</h1>
+        <section class="listCadr">
+            
+           
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="/ejercicios/ejresponsive.html">
+                        <figure id="tarjeta">                          
+                                <img src="./media/imgindex/Captura.JPG" class="frontal" alt="">
+                         
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁Responsive</h2>
+                                <hr>
+                                <p> Menu con Iconos e imágenes de fondo responsive
+                              
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="/ejercicios/anuncios_alumnes.html">
+                        <figure id="tarjeta">
+                            <div>
+                                <img src="./media/imgindex/prensa.jpg" class="frontal" alt="">
+                                
+                            </div>
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁La Prensa</h2>
+                                <hr>
+                                <p>Distribución de anuncios responsive unicamente con Flexbox
+                              
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="/ejercicios/menucolapse/index.html">
+                        <figure id="tarjeta">
+                            <div>
+                                <img src="./media/imgindex/menu.png" class="frontal" alt="">
+                               
+                            </div>
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁Menu</h2>
+                                <hr>
+                                <p>Menu Closable con un input de checkbox. No tiene el formato para ser responsive
+                              
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="/ejercicios/ejercicioformFirstMobile-TODO/firstmobile.html">
+                        <figure id="tarjeta">
+                            
+                                <img src="./media/imgindex/first.png" class="frontal" alt="">
+                               
+                           
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁First Mobile</h2>
+                                <hr>
+                                <p>Mezcla de display Flex y Grid para adaptar la maquetación
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="/ejercicios/Exercici_layoutFlex còpia-TODO/index_6.html">
+                        <figure id="tarjeta">
+                            <div>
+                                <img src="./media/imgindex/layaut.png" class="frontal" alt="">
+                              
+                            </div>
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁LayoutFlex</h2>
+                                <hr>
+                                <p>Mezcla de display Flex y Grid para adaptar la maquetación.Todo se podría haber echo con Flexbox pero practicamos mas display Grid
+                              
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div class="contenedor_tarjeta">
+                    <a href="../ejercicios/layoutgridImgs-TODO/">
+                        <figure id="tarjeta">                          
+                                <img src="./media/imgindex/GAleria Flex imagenes.png" class="frontal" alt="">
+                         
+                            <figcaption class="trasera">
+                                <h2 class="titulo">📁Galería de imágenes</h2>
+                                <hr>
+                                <p> Creando un galería de imágenes con flex column y flex row
+                              
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>      
+          
+
+        
+        
     </main>
     <footer>
         <p>Desde 2023 &copy;

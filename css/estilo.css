@@ -320,6 +320,7 @@ footer{
 }
 
 .fmain{
+   
     background: #b1c5a4;  
 }
 
@@ -365,15 +366,14 @@ footer{
     margin: 0 1rem 1rem 0;
  
 }
-.main{
-    width: 80%;
-    margin: auto;
-}
+
+
 .bgmain > section{
     display: flex;
     justify-content: center;
     margin: 1rem;
     gap: 1rem;
+    
    
 }
 

@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../ejercicios/menucolapse/index.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" type="image/x-icon" href="/media/favicons/favicon.ico">
     <title>Document</title>
 </head>
 
-<body class="fmain">
-    <header id="header">
-        <a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></a>
-        <nav>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="imagenes.html">Imágenes</a></li>
-                <li><a href="audio.html">Audio/video</a></li>
-                <li><a href="iframe.html">Iframe</a></li>
-                <li><a class="active" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<body class="fmain" id="header">  
+    <header >   
+        <section>
+            <nav>
+                <label for="muestraMenu" class="showMenu"> <img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="80px"></label>
+                <input type="checkbox" name="muestraMenu" id="muestraMenu">
+                <ul class=".viwe">
+                    <li><a href="index.html"><img src="/media/cdnlogo.com_mozilla-firefox.svg" alt="logo Firefox" width="60px"></a></li>
+                    <li><a href="imagenes.html">Imágenes</a></li>
+                    <li><a href="audio.html">Audio/Video</a></li>
+                    <li><a href="iframe.html">Iframe</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="florencia.html" class="active">Florencia</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <aside>
@@ -30,7 +35,7 @@
 
 
     </aside>
-    <main class="main">
+    <main  style="margin-top: 77px;">
         <h1 class="fptitle">F L O R E N C I A</h1>
         <p>Florencia fue en el siglo XIV la cuna del Renacimiento y concentra una cantidad enorme de obras de arte y
             arquitectura de aquel período. Hablaremos aquí de tres de las principales iglesias de Florencia.</p>
